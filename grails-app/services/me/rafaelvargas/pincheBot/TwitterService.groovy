@@ -32,7 +32,7 @@ class TwitterService {
 	
 	private TwitterFactory getConfiguration(){
 		ConfigurationBuilder cb = new ConfigurationBuilder()
-		cb.setDebugEnabled(true)
+		cb.setIncludeRTsEnabled(false)
 		  .setOAuthConsumerKey(grailsApplication.config.oauth.consumerKey)
 		  .setOAuthConsumerSecret(grailsApplication.config.oauth.consumerSecret)
 		  .setOAuthAccessToken(grailsApplication.config.oauth.accessToken)
